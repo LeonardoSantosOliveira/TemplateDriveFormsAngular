@@ -1,0 +1,8 @@
+<div class="mb20">
+    <users-card-list [usersList]="usersList" (onUserSelected)="onUserSelected($event)"></users-card-list>
+</div>
+
+<user-form *ngIf="userSelectedIndex !== undefined" [genresList]="genresList" [statesList]="statesList" [userSelected]="userSelected" (onFormSubmit)="onFormSubmit()">
+    
+</user-form>
+
